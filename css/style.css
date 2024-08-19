@@ -130,16 +130,16 @@ tr > *:first-child {
 
 
 .tooltip-title {
-    font-weight: 400;
-    font-size: 14px;
-    color: #5f6e7d;
-    margin: 0 0 5px 0;
+    font-weight: 400!important;
+    font-size: 14px!important;
+    color: #5f6e7d!important;
+    margin: 0 0 5px 0!important;
 }
 .tooltip-value {
-    font-weight: 400;
-    font-size: 14px;
-    color: #00000e;
-    margin: 0 0 20px 0;
+    font-weight: 400!important;
+    font-size: 14px!important;
+    color: #00000e!important;
+    margin: 0 0 20px 0!important;
 }
 
 
@@ -153,24 +153,25 @@ tr > *:first-child {
 }
 
 .tooltip {
-    min-width: 500px;
-    min-height: 575px;
-    display: none;
+    display: block;
+    width: 500px;
+    height: 575px;
     position: absolute;
-    padding: 20px;
+    padding: 25px 20px;
     background-color: #ffffff;
+    color: white;
     border-radius: 15px;
-    z-index: 4;
+    z-index: 1000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: start;
 }
 
 .tooltip-arrow {
-    outline: none;
-    z-index: 5;
-    left: -15px;
     position: absolute;
     width: 0;
     height: 0;
+    z-index: 5;
+    left: -15px;
     border-style: solid;
     border-width: 15px 15px 15px 0;
     border-color: transparent white transparent transparent;

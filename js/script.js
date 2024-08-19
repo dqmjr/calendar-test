@@ -14,7 +14,7 @@ $(document).ready(function() {
         var top = e.pageY - (tooltipHeight / 2);
         var left = e.pageX + 15; // Окно появляется справа от курсора
 
-        var arrowLeft = '-5px'; // Позиция треугольника по умолчанию
+        var arrowLeft = '-15px'; // Позиция треугольника по умолчанию
         var arrowRight = 'auto';
 
         // Проверка границ экрана по горизонтали
@@ -23,7 +23,7 @@ $(document).ready(function() {
 
             // Корректируем положение треугольника для отображения справа
             arrowLeft = 'auto';
-            arrowRight = '-5px';
+            arrowRight = '-15px';
         }
 
         // Проверка границ экрана по вертикали
@@ -34,13 +34,13 @@ $(document).ready(function() {
         }
 
         // Обновление позиции треугольника на уровне мышки
-        var arrowTop = e.pageY - top - 5; // "- 5" для коррекции положения треугольника по центру курсора
+        var arrowTop = e.pageY - top - 15; // "- 5" для коррекции положения треугольника по центру курсора
 
         tooltipArrow.css({
             top: arrowTop + 'px', // Устанавливаем треугольник на уровне мышки
             left: arrowLeft,
             right: arrowRight,
-            transform: arrowLeft === '-5px' ? 'translateY(-50%) rotate(0deg)' : 'translateY(-50%) rotate(180deg)' // Поворачиваем треугольник
+            transform: arrowLeft === '-15px' ? 'translateY(-50%) rotate(0deg)' : 'translateY(-50%) rotate(180deg)' // Поворачиваем треугольник
         });
 
         tooltip.css({ top: top + 'px', left: left + 'px' });
